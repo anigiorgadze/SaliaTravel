@@ -1,0 +1,29 @@
+$primary-color:#22afb9;
+$white:#ffff;
+$black:#3b3b3b;
+
+$primary-color:hsl(184, 69%, 43%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+@font-face {
+	font-family: caps;
+	src:url(../assets/fonts/caps.ttf);
+}
+@font-face {
+	font-family: normal;
+	src:url(../assets/fonts/normal-bold.ttf);
+}
+
+
+// .main{
+//     position: relative;
+//     overflow-x: hidden;
+// }
