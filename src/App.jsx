@@ -17,7 +17,9 @@ function App() {
           <Route path="/About" element={<About />}/>
           <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
-
+    <div>
+      edit text ................
+    </div>
     </Router>
     // <div>
     //     <Header/>
