@@ -33,7 +33,7 @@ function Header() {
                 </nav>
                 <div className='burger' onClick={toggleMenu}>
                     <div className={isOpen ? 'line line1 active' : 'line'}></div>
-                    <div className={isOpen ? 'line line2 active' : 'line'}></div>
+                    <div className={isOpen ? 'line line2 active' : 'line line2'}></div>
                     <div className={isOpen ? 'line line3 active' : 'line'}></div>
                 </div>
             </div>

@@ -22,8 +22,23 @@ $primary-color:hsl(184, 69%, 43%);
 	src:url(../assets/fonts/normal-bold.ttf);
 }
 
+@font-face {
+    font-family: neue; 
+    src: url(./assets/Fonts/neue.otf) format("opentype");
+}
 
-// .main{
-//     position: relative;
-//     overflow-x: hidden;
+
+// button:focus,
+// div:focus,
+// a:focus {
+//     outline: none;
+//     background-color: #ffffff; /* ფონის ცვლილება აქტიურ მდგომარეობაში */
+
+// }
+
+// button:active,
+// div:active,
+// a:active {
+//     background-color: #ffffff; /* ფონის ცვლილება აქტიურ მდგომარეობაში */
+//     box-shadow: none;
 // }

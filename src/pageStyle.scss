@@ -1,0 +1,125 @@
+@use "./main.scss";
+
+.product-details{
+    padding: 2rem 0;
+    max-width: 90%;
+    margin: 10dvh auto;
+    // p{
+    //     font-family: Arial, Helvetica, sans-serif; 
+    // }
+
+    .background{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        h2{
+            padding: 10px;
+            font-size: 27px;
+            text-align: center;
+            color: main.$white;
+            font-family: caps;
+            line-height: 35px;
+        }
+    }
+    button{
+        border: none;
+        margin-top: 2rem;
+        .back-btn{
+            padding: 15px 30px;
+            background-color: main.$primary-color;
+            color: main.$white;
+            font-size: 17px;
+            border-radius: 30px;
+        }
+    }
+    .paragraph-map{
+        margin: 2rem 0;
+        font-size: 20px;
+        line-height: 30px;
+        font-family: normal;
+    }
+    .days{
+        border-top: 2px solid main.$primary-color;
+        padding: 2rem 0;
+        overflow: hidden !important;
+
+
+        .days-item{
+            position: relative;
+            overflow: hidden !important;
+
+            .head{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                background-color: main.$primary-color;
+                cursor: pointer;
+                position: relative;
+                z-index: 111;
+                h4{
+                    font-size: 20px;
+                    color: main.$white;
+                }
+                .head-icon{
+                    transition: 0.3s;
+                    ion-icon{
+                        color: main.$white;
+                        font-size: 25px;
+                    }
+                }
+                .head-icon.active{
+                    transform: rotate(45deg);
+                }
+            }
+            .days-paragraph{
+                // border: 1px solid main.$primary-color;
+                padding: 0.5rem 0 0.5rem 50px;
+                position: absolute;
+                font-size: 17px;
+                transition: 0.5s;
+            }
+            .days-paragraph.active{
+                position: relative;
+                transition: 0.5s;
+
+            }
+        }
+    }
+    .in-price, .additon-info, .must-pay{
+        border-top: 2px solid main.$primary-color;
+        padding: 2rem 0;
+        h4{
+            font-size: 20px;
+            font-family: caps;
+            margin-bottom: 1rem;
+        }
+        li{
+            list-style: disc;
+            margin-left: 1.3rem;
+            font-size: 17px;
+        }
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .grid{
+        margin-top: 0;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        
+        .in-price, .additon-info, .must-pay{
+            li{
+                line-height: 30px;
+            }
+        }
+        .in-price{
+            border-top: none;
+
+        }
+    }
+
+} 
