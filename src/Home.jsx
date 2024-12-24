@@ -1,7 +1,8 @@
-import React from 'react'
+// import React from 'react'
 import Hero from "./components/home/Hero"
 import Country from "./components/home/Country"
 import Tours from './components/home/Tours'
+import TravelPlan from './components/home/TravelPlan'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Hero />
       <Country />
       <Tours />
+      <TravelPlan />
     </div>
   )
 }

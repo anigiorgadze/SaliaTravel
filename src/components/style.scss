@@ -273,7 +273,7 @@
 .country {
     position: relative;
     overflow-x: hidden;
-    padding: 5rem 0;
+    padding: 3rem 0;
 
     .country-content {
         max-width: 90%;
@@ -399,6 +399,7 @@
 
             img {
                 width: 100%;
+                border-radius: 10px;
             }
 
             h3 {
@@ -427,12 +428,97 @@
 
                 .btn{
                     color: white;
+                    font-family: caps;
+                    font-size: 17px;
                 }
             }
 
         }
     }
 
+}
+
+.plan-img{
+    background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.486)), url(../assets/plan-pick.jpg) center / cover;
+    height: 400px;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.travel-plan{
+    max-width: 90%;
+    margin: 3rem auto;
+
+
+    .travel-plan-head{
+        position: relative;
+        border-bottom: 2px solid main.$primary-color;
+        padding: 2rem 0;
+
+        h2{
+            font-size: 30px;
+            font-family: caps;
+            font-weight: 600;
+            color: main.$black;
+        }
+        p{
+            font-size: 17px;
+            margin-top: 1rem;
+        }
+        .travel-plan-img{
+            display: none;
+        }
+    }
+    .plan{
+        margin-top: 2rem;
+        display: grid;
+        gap: 1rem;
+        .plan-item{
+            display: flex;
+            gap: 15px;
+
+            .side{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 5px;
+                .circle{
+                    margin-top: 3px;
+                    width: 20px;
+                    height: 20px;
+                    background-color: main.$primary-color;
+                    border-radius: 50%;                 
+                }
+                .col{
+                    width: 2px;
+                    height: 80%;
+                    background-color: main.$primary-color;
+                }
+            }
+            .stage{
+                h3{
+                    font-size: 20px;
+                    font-family: caps;
+                    line-height: 28px;
+                    color: main.$primary-color;
+                }
+
+                ul{
+                    margin-top: 1rem;
+                    margin-left: 17px;
+                    
+                    li{
+                        line-height: 26px;
+                        font-size: 17px;
+                        color: main.$black;
+                        list-style: disc;   
+                    }
+                }
+
+            }
+
+        }
+    }
 }
 
 @media (min-width: 700px) {
@@ -545,16 +631,10 @@
                     }
     
                     .icons{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 12px;
+                        gap: 10px !important;
     
                         ion-icon{
-                            background-color: main.$white;
-                            font-size: 17px;
-                            padding: 10px;
-                            color: main.$primary-color;
+                            font-size: 1.3vw !important;
                             border-radius: 30px
                         }
                     }
@@ -693,18 +773,116 @@
             
         }
     }
+    .plan-img{
+        background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.486)), url(../assets/plan-pick.jpg) center / cover;
+        height: 20vw;
+        // height: 250px;
+        width: 100%;
+        background-attachment: fixed;
+        // border-radius: 10px;
+    }
+    .travel-plan{
+        max-width: 90%;
+        margin: 3rem auto;
+        .travel-plan-head{
+            // position: relative;
+            p{
+                font-size: 17px;
+                margin-top: 1rem;
+                width: 500px;
+            }
+            .travel-plan-img{
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: -6px;
 
+                img{
+                    transition: 0.5s;
+                    height: 80px;
+                    width: 80px;
+                    filter: brightness(0) saturate(100%) invert(57%) sepia(44%) saturate(671%) hue-rotate(135deg) brightness(92%) contrast(97%);
+                }
+
+                .cloud{
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    top: -60px;
+                    right: 170px;
+                }
+                .clouds{
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    top: -45px;
+                    right: 100px;
+                }
+                .sun{
+                    position: absolute;
+                    width: 40px;
+                    height: 40px;
+                    top: -70px;
+                    right: 20px;
+                }
+            }
+        }
+        .plan{
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+
+
+            .plan-item{
+                display: flex;
+                gap: 15px;
+    
+                .side{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 5px;
+                    .circle{
+                        margin-top: 3px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: main.$primary-color;
+                        border-radius: 50%;
+                    }
+                    .col{
+                        width: 2px;
+                        height: 80%;
+                        background-color: main.$primary-color;
+                    }
+                }
+                .stage{
+                    h3{
+                        font-size: 20px;
+                        font-family: caps;
+                        line-height: 28px;
+                        color: main.$primary-color;
+                    }
+    
+                    ul{
+                        margin-top: 1rem;
+                        margin-left: 17px;
+                        
+                        li{
+                            line-height: 26px;
+                            font-size: 17px;
+                            color: main.$black;
+                            list-style: disc;   
+                        }
+                    }
+    
+                }
+    
+            }
+        }
+    }
 } 
 
 // @media (min-width: 1400px) {
-//     .header{
-//         .header-content{
-//             .nav-bar{
-//                 width: 65%;
-
-//             }
-
-//         }
-//     }
 
 // } 

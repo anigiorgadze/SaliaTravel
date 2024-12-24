@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { ToursData } from '../../Data'
 import gsap from 'gsap'
 import { useEffect } from 'react'
@@ -6,7 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 import bus from '../../assets/bus.png'
-import bus2 from '../../assets/bus2.png'
+// import bus2 from '../../assets/bus2.png'
 
 
 

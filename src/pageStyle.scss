@@ -12,6 +12,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border-radius: 30px;
         
         h2{
             padding: 10px;
@@ -66,11 +67,12 @@
                     transition: 0.3s;
                     ion-icon{
                         color: main.$white;
-                        font-size: 25px;
+                        font-size: 27px;
                     }
                 }
                 .head-icon.active{
                     transform: rotate(45deg);
+                    transform-origin: center;
                 }
             }
             .days-paragraph{
