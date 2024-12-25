@@ -22,7 +22,7 @@ function ProductDetails() {
         window.scrollTo(0, 0);
     }, []);
 
-    if (!product) {
+    if(!product) {
         return <h2>Product not found</h2>;
     }
 
@@ -36,7 +36,7 @@ function ProductDetails() {
             </div>
             <div className='grid'>
                 <div>
-                    <p className='paragraph-map'>{product.includes}</p>
+                    <p className='paragraph-map'> <b>დაგეგმილი მარშრუტი:</b>  {product.includes}</p>
                     <div className='days'>
                         {product.details[0].day.map((item, index) => (
                             <div className='days-item' key={index}>

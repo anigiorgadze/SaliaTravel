@@ -18,7 +18,7 @@ function Header() {
                         <li><a href="/Home">მთავარი</a></li>
                         <li><a href="/About">ჩვენს შესახებ</a></li>
                         <li><a href="">ტურები</a></li>
-                        <li><a href="">საკონტაქტო</a></li>
+                        <li><a href="/Contact">საკონტაქტო</a></li>
                     </ul>
                     <ul className='menu-additon-info'>
                         <li><ion-icon name="location-outline"></ion-icon>2 Leonidze street Tbilisi, Georgia</li>
