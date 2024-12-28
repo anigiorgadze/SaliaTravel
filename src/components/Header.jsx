@@ -12,7 +12,7 @@ function Header() {
     return (
         <div className='header'>
             <div className='header-content'>
-                <img src={logo} className='logo' alt="" />
+                <a href="/home"> <img src={logo} className='logo' alt="" /></a>
                 <nav className={isOpen ? 'nav-bar active' : 'nav-bar'}>
                     <ul>
                         <li><a href="/Home">მთავარი</a></li>

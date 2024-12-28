@@ -1,7 +1,8 @@
 
-import img1 from '../../assets/img1.jpg';
-import img2 from '../../assets/img2.jpeg';
-import img3 from '../../assets/img3.jpeg';
+import img1 from '../../assets/hero-img/egypt.jpg';
+import img2 from '../../assets/hero-img/dubai.jpg';
+import img3 from '../../assets/hero-img/turkey.jpg';
+import img4 from '../../assets/hero-img/img1.jpg';
 import { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -13,25 +14,25 @@ const slideList = [
     {
         id: 1,
         img: img1,
-        header: "ტაილანდი",
+        header: "ეგვიპტე",
         paragraph: "მხატვრული ლიტერატურის ჟანრი, აგრეთვე სამეცნიერო ლიტერატურის სახეობა. ნაწარმოებები."
     },
     {
         id: 2,
         img: img2,
-        header: "პარიზი",
+        header: "დუბაი",
         paragraph: "მხატვრული ლიტერატურის ჟანრი, აგრეთვე სამეცნიერო ლიტერატურის სახეობა. ნაწარმოებები."
     },
     {
         id: 3,
         img: img3,
-        header: "საჰარა",
+        header: "თურქეთი",
         paragraph: "მხატვრული ლიტერატურის ჟანრი, აგრეთვე სამეცნიერო ლიტერატურის სახეობა. ნაწარმოებები."
     },
     {
         id: 4,
-        img: img2,
-        header: "პარიზი 2",
+        img: img4,
+        header: "ტაილანდი",
         paragraph: "მხატვრული ლიტერატურის ჟანრი, აგრეთვე სამეცნიერო ლიტერატურის სახეობა. ნაწარმოებები."
     },
 ];
