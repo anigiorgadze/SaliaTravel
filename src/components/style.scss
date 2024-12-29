@@ -57,7 +57,8 @@
                     font-family: caps;
                 }
             }
-            .menu-additon-info{
+
+            .menu-additon-info {
                 position: absolute;
                 bottom: 1rem;
 
@@ -66,7 +67,7 @@
                 gap: 1rem;
 
 
-                li{
+                li {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -76,18 +77,18 @@
                     font-family: caps;
                     color: main.$primary-color;
 
-                    ion-icon{
-                        font-size: 22px ;
+                    ion-icon {
+                        font-size: 22px;
                     }
                 }
 
-                .icons{
+                .icons {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     gap: 12px;
 
-                    ion-icon{
+                    ion-icon {
                         font-size: 22px;
                         color: main.$primary-color;
                     }
@@ -109,7 +110,7 @@
             gap: 4px;
             position: relative;
             z-index: 111;
-            
+
 
             .line {
                 transition: 0.5s;
@@ -118,7 +119,8 @@
                 background-color: main.$white;
                 border-radius: 5px;
             }
-            .line2{
+
+            .line2 {
                 width: 22px !important;
                 margin-left: 10px;
             }
@@ -140,14 +142,15 @@
             }
         }
     }
-    .decor-header{ 
+
+    .decor-header {
         position: absolute;
         height: 10dvh;
         width: 20%;
         background-color: main.$primary-color;
         right: 0;
 
-        img{
+        img {
             position: absolute;
             height: 101%;
             right: 99%;
@@ -155,7 +158,7 @@
 
         }
 
-        .space{
+        .space {
             width: 20%;
         }
     }
@@ -192,7 +195,8 @@
                 }
             }
         }
-        .opacity{
+
+        .opacity {
             width: 100%;
             height: 100%;
             display: flex;
@@ -200,14 +204,15 @@
             align-items: flex-end;
             position: absolute;
             overflow: hidden;
-            h2{
+
+            h2 {
                 // transform: rotate(45deg);
                 font-size: 16vw;
                 font-family: caps;
                 opacity: 0.3;
                 font-weight: 900;
                 text-overflow: ellipsis;
-                white-space: nowrap; 
+                white-space: nowrap;
             }
         }
 
@@ -381,7 +386,8 @@
             color: main.$black;
         }
     }
-    .bus-div{
+
+    .bus-div {
         display: none;
     }
 
@@ -426,7 +432,7 @@
                 color: white;
                 background-color: main.$primary-color;
 
-                .btn{
+                .btn {
                     color: white;
                     font-family: caps;
                     font-size: 17px;
@@ -438,80 +444,87 @@
 
 }
 
-.plan-img{
+.plan-img {
     background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.486)), url(../assets/plan-pick.jpg) center / cover;
     height: 400px;
     width: 100%;
     background-attachment: fixed;
 }
 
-.travel-plan{
+.travel-plan {
     max-width: 90%;
     margin: 3rem auto;
 
 
-    .travel-plan-head{
+    .travel-plan-head {
         position: relative;
         border-bottom: 2px solid main.$primary-color;
         padding: 2rem 0;
 
-        h2{
+        h2 {
             font-size: 30px;
             font-family: caps;
             font-weight: 600;
             color: main.$black;
         }
-        p{
+
+        p {
             font-size: 17px;
             margin-top: 1rem;
         }
-        .travel-plan-img{
+
+        .travel-plan-img {
             display: none;
         }
     }
-    .plan{
+
+    .plan {
         margin-top: 2rem;
         display: grid;
         gap: 1rem;
-        .plan-item{
+
+        .plan-item {
             display: flex;
             gap: 15px;
 
-            .side{
+            .side {
                 display: flex;
                 align-items: center;
                 flex-direction: column;
                 gap: 5px;
-                .circle{
+
+                .circle {
                     margin-top: 3px;
                     width: 20px;
                     height: 20px;
                     background-color: main.$primary-color;
-                    border-radius: 50%;                 
+                    border-radius: 50%;
                 }
-                .col{
+
+                .col {
                     width: 2px;
                     height: 80%;
                     background-color: main.$primary-color;
                 }
             }
-            .stage{
-                h3{
+
+            .stage {
+                h3 {
                     font-size: 20px;
                     font-family: caps;
                     line-height: 28px;
                     color: main.$primary-color;
                 }
 
-                ul{
+                ul {
                     margin-top: 1rem;
                     margin-left: 17px;
-                    
-                    li{
+
+                    li {
                         line-height: 26px;
                         font-size: 17px;
                         color: main.$black;
-                        list-style: disc;   
+                        list-style: disc;
                     }
                 }
 
@@ -561,12 +574,14 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
-                p{
+
+                p {
                     display: -webkit-box;
                     -webkit-box-orient: vertical;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    -webkit-line-clamp: 3; /* მხოლოდ სამი ხაზი გამოისახება */
+                    -webkit-line-clamp: 3;
+                    /* მხოლოდ სამი ხაზი გამოისახება */
                     line-clamp: 3;
                 }
 
@@ -623,22 +638,23 @@
                         color: main.$primary-color;
                     }
                 }
-                .menu-additon-info{
+
+                .menu-additon-info {
                     position: static;
-    
-                    li{
+
+                    li {
                         display: none;
                     }
-    
-                    .icons{
+
+                    .icons {
                         gap: 10px !important;
-    
-                        ion-icon{
+
+                        ion-icon {
                             font-size: 1.3vw !important;
                             border-radius: 30px
                         }
                     }
-    
+
                 }
             }
 
@@ -649,24 +665,25 @@
             .burger {
                 display: none,
             }
-            .decor-header{ 
+
+            .decor-header {
                 position: absolute;
                 height: 10dvh;
                 width: 15%;
                 background-color: main.$primary-color;
                 right: 0;
-    
+
                 // display: none;
-        
-                img{
+
+                img {
                     position: absolute;
                     height: 101%;
                     right: 99%;
                     filter: brightness(0) saturate(100%) invert(57%) sepia(44%) saturate(671%) hue-rotate(135deg) brightness(92%) contrast(97%);
-        
+
                 }
-        
-                .space{
+
+                .space {
                     width: 15%;
                 }
             }
@@ -677,7 +694,7 @@
     .hero {
 
         .hero-content {
-            .opacity{
+            .opacity {
                 width: 100%;
                 height: 100%;
                 display: flex;
@@ -685,21 +702,27 @@
                 align-items: center !important;
                 position: absolute;
                 overflow: hidden;
-                h2{
+
+                h2 {
                     // transform: rotate(45deg);
                     font-size: 16vw;
                     font-family: caps;
                     opacity: 0.3;
                     font-weight: 900;
                     text-overflow: ellipsis;
-                    white-space: nowrap; 
+                    white-space: nowrap;
                 }
             }
+
+
             .text {
                 padding: 5%;
 
                 .ofset {
                     overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
 
                     h1 {
                         font-size: 100px !important;
@@ -708,6 +731,7 @@
                     p {
                         padding-top: 1rem;
                         font-size: 1vw;
+                        width: 70%;
                     }
                 }
 
@@ -748,18 +772,19 @@
 }
 
 @media (min-width: 1200px) {
-    .header{
-        .header-content{
-            .nav-bar{
+    .header {
+        .header-content {
+            .nav-bar {
                 width: 65%;
-                .menu-additon-info{
-                    .icons{
+
+                .menu-additon-info {
+                    .icons {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         gap: 1rem;
-    
-                        ion-icon{
+
+                        ion-icon {
                             background-color: main.$white;
                             font-size: 25px;
                             padding: 10px;
@@ -767,13 +792,27 @@
                             // border-radius: 50%;
                         }
                     }
-    
+
                 }
             }
-            
+
         }
     }
-    .plan-img{
+
+    .hero {
+
+        .ofset {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                width: 70%;
+            }
+        }
+    }
+
+    .plan-img {
         background: linear-gradient(rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.486)), url(../assets/plan-pick.jpg) center / cover;
         height: 20vw;
         // height: 250px;
@@ -781,44 +820,50 @@
         background-attachment: fixed;
         // border-radius: 10px;
     }
-    .travel-plan{
+
+    .travel-plan {
         max-width: 90%;
         margin: 3rem auto;
-        .travel-plan-head{
+
+        .travel-plan-head {
+
             // position: relative;
-            p{
+            p {
                 font-size: 17px;
                 margin-top: 1rem;
                 width: 500px;
             }
-            .travel-plan-img{
+
+            .travel-plan-img {
                 display: block;
                 position: absolute;
                 right: 0;
                 bottom: -6px;
 
-                img{
+                img {
                     transition: 0.5s;
                     height: 80px;
                     width: 80px;
                     filter: brightness(0) saturate(100%) invert(57%) sepia(44%) saturate(671%) hue-rotate(135deg) brightness(92%) contrast(97%);
                 }
 
-                .cloud{
+                .cloud {
                     position: absolute;
                     width: 30px;
                     height: 30px;
                     top: -60px;
                     right: 170px;
                 }
-                .clouds{
+
+                .clouds {
                     position: absolute;
                     width: 40px;
                     height: 40px;
                     top: -45px;
                     right: 100px;
                 }
-                .sun{
+
+                .sun {
                     position: absolute;
                     width: 40px;
                     height: 40px;
@@ -827,61 +872,65 @@
                 }
             }
         }
-        .plan{
+
+        .plan {
             margin-top: 3rem;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
             gap: 2rem;
 
 
-            .plan-item{
+            .plan-item {
                 display: flex;
                 gap: 15px;
-    
-                .side{
+
+                .side {
                     display: flex;
                     align-items: center;
                     flex-direction: column;
                     gap: 5px;
-                    .circle{
+
+                    .circle {
                         margin-top: 3px;
                         width: 20px;
                         height: 20px;
                         background-color: main.$primary-color;
                         border-radius: 50%;
                     }
-                    .col{
+
+                    .col {
                         width: 2px;
                         height: 80%;
                         background-color: main.$primary-color;
                     }
                 }
-                .stage{
-                    h3{
+
+                .stage {
+                    h3 {
                         font-size: 20px;
                         font-family: caps;
                         line-height: 28px;
                         color: main.$primary-color;
                     }
-    
-                    ul{
+
+                    ul {
                         margin-top: 1rem;
                         margin-left: 17px;
-                        
-                        li{
+
+                        li {
                             line-height: 26px;
                             font-size: 17px;
                             color: main.$black;
-                            list-style: disc;   
+                            list-style: disc;
                         }
                     }
-    
+
                 }
-    
+
             }
         }
     }
-} 
+}
 
 // @media (min-width: 1400px) {
 
