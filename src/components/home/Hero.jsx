@@ -103,7 +103,7 @@ function Hero() {
             <div className='hero-content' ref={swiperRef}>
                 <Swiper
                     modules={[Autoplay, Pagination]}
-                    autoplay={{ delay: 5000, disableOnInteraction: false }}
+                    autoplay={{ delay: 10000, disableOnInteraction: false }}
                     navigation
                     pagination={{ clickable: true, el: '.swiper-pagination', }}
                     scrollbar={{ draggable: true }}
