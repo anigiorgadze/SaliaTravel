@@ -7,11 +7,13 @@ import About from "./About";
 import Contact from "./Contact";
 import ProductDetails from "./ProductDetails";
 import Footer from "./components/Footer";
+import ScrollPositionManager from "./ScrollPositionManager";
 
 function App() {
   return (
 
     <Router>
+      <ScrollPositionManager />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />

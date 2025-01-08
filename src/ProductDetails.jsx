@@ -3,10 +3,11 @@ import { useParams } from 'react-router-dom';
 import { ToursData } from './Data';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import arrow from './assets/arrow-right.svg';
 
 function ProductDetails() {
     const [openIndexes, setOpenIndexes] = useState([]); // მასივი გახსნილი ელემენტების ინდექსებისათვის
-    
+
     const toggleText = (index) => {
         if (openIndexes.includes(index)) {
             setOpenIndexes(openIndexes.filter(i => i !== index)); // თუ უკვე გახსნილია, ამოიღებს ინდექსს
@@ -22,18 +23,28 @@ function ProductDetails() {
         window.scrollTo(0, 0);
     }, []);
 
-    if(!product) {
+    if (!product) {
         return <h2>Product not found</h2>;
     }
 
     return (
         <div className='product-details'>
             <div className='background' style={{
-                background: ` linear-gradient(#00000086,hsla(184, 68.90%, 42.90%, 0.64)),url(${product.img}) no-repeat center center / cover`,
-                height: "30dvh",
+                background: ` linear-gradient(#00000086,hsla(0, 0.00%, 0.00%, 0.60)),url(${product.img}) 
+                `,
+                // height: "30dvh", 
+                // backgroundAttachment:"fixed",
             }}>
                 <h2>{product.head}</h2>
+                <div>
+                    <a href="/home">მთავარი</a>
+                    <img src={arrow} alt="" />
+                    <a href="#">ტურები</a>
+                    <img src={arrow} alt="" />
+                    <p>{product.head}</p>
+                </div>
             </div>
+
             <div className='grid'>
                 <div>
                     <p className='paragraph-map'> <b>დაგეგმილი მარშრუტი:</b>  {product.includes}</p>
