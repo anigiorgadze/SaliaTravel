@@ -1,12 +1,19 @@
 // import React from 'react';
 import { useParams } from 'react-router-dom';
 import { ToursData } from './Data';
-import { Link } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import arrow from './assets/arrow-right.svg';
 
 function ProductDetails() {
     const [openIndexes, setOpenIndexes] = useState([]); // მასივი გახსნილი ელემენტების ინდექსებისათვის
+    const location = useLocation();
+    const navigate = useNavigate();
+  
+    const handleGoBack = () => {
+      // თუ state-ში "from" არის მითითებული, დაბრუნდი იქ, წინააღმდეგ შემთხვევაში მთავარ გვერდზე
+      navigate(location.state?.from || '/');
+    };
 
     const toggleText = (index) => {
         if (openIndexes.includes(index)) {
@@ -39,7 +46,7 @@ function ProductDetails() {
                 <div>
                     <a href="/home">მთავარი</a>
                     <img src={arrow} alt="" />
-                    <a href="#">ტურები</a>
+                    <a href="/ToursPage">ტურები</a>
                     <img src={arrow} alt="" />
                     <p>{product.head}</p>
                 </div>
@@ -80,7 +87,7 @@ function ProductDetails() {
                     </ul>
                 </div>
             </div>
-            <button><Link className='back-btn' to="/">← უკან დაბრუნება</Link></button>
+            <button className='back-btn' onClick={handleGoBack}>← უკან დაბრუნება</button>
         </div>
     );
 }

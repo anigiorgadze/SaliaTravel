@@ -17,7 +17,7 @@ function Header() {
                     <ul>
                         <li><a href="/Home">მთავარი</a></li>
                         <li><a href="/About">ჩვენს შესახებ</a></li>
-                        <li><a href="">ტურები</a></li>
+                        <li><a href="/ToursPage">ტურები</a></li>
                         <li><a href="/Contact">საკონტაქტო</a></li>
                     </ul>
                     <ul className='menu-additon-info'>
@@ -28,7 +28,6 @@ function Header() {
                             <a href="https://www.instagram.com/saliatravel/" target='blank'><ion-icon name="logo-instagram"></ion-icon></a>
                             <a href="https://www.tiktok.com/@saliatravel?_t=8sR5boVvKbd&_r=1" target='blank'><ion-icon name="logo-tiktok"></ion-icon></a>
                         </li>
-
                     </ul>
                 </nav>
                 <div className='burger' onClick={toggleMenu}>

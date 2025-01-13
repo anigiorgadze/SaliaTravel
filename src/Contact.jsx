@@ -1,4 +1,4 @@
-import React from 'react'
+
 import arrow from './assets/arrow-right.svg'
 import call from './assets/call-1.svg'
 import location from './assets/location-dot2.svg'
