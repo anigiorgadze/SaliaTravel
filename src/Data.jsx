@@ -3,7 +3,8 @@ import rome2 from './assets/tours/rome2.jpg'
 import amsterdam from './assets/tours/amsterdam.jpg'
 import brussels from './assets/tours/brussels.jpg'
 import paris from './assets/tours/paris.jpg'
-import zurich from './assets/tours/zurich.jpg'
+import zurich from './assets/tours/rome2.jpg'
+// import zurich from './assets/tours/zurich.jpg'
 import viena from './assets/tours/viena.jpg'
 
 
