@@ -17,11 +17,11 @@ $primary-color:hsl(184, 69%, 43%);
 
 @font-face {
 	font-family: caps;
-	src:url(../assets/fonts/caps.ttf);
+	src:url(/public/Fonts/caps.ttf) format('truetype');
 }
 @font-face {
 	font-family: normal;
-	src:url(../assets/fonts/normal-bold.ttf);
+	src:url(/public/Fonts/normal-bold.ttf) format('truetype');
 }
 
 @font-face {
