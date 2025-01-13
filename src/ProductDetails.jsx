@@ -39,8 +39,6 @@ function ProductDetails() {
             <div className='background' style={{
                 background: ` linear-gradient(#00000086,hsla(0, 0.00%, 0.00%, 0.60)),url(${product.img}) 
                 `,
-                // height: "30dvh", 
-                // backgroundAttachment:"fixed",
             }}>
                 <h2>{product.head}</h2>
                 <div>
