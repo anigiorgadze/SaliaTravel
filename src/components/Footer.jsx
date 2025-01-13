@@ -55,8 +55,10 @@ function Footer() {
                 </div>
             </div>
 
-            <video autoPlay muted loop>
+            <video autoPlay muted loop playsInline>
                 <source src={video} type="video/mp4" />
+                <source src={video} type="video/webm" />
+                <source src={video} type="video/ogg" />
             </video>
 
         </div>
