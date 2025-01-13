@@ -30,6 +30,18 @@ $primary-color:hsl(184, 69%, 43%);
 }
 
 
+video::-webkit-media-controls {
+    display: none !important;
+}
+    
+video::-webkit-media-controls-panel {
+    display: none !important;
+}
+    
+video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+}
+    
 // button:focus,
 // div:focus,
 // a:focus {

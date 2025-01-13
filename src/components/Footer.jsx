@@ -1,4 +1,3 @@
-import React from 'react'
 import video from '../assets/sea.mp4'
 import logoFooter from '../assets/logo.png'
 
@@ -56,7 +55,7 @@ function Footer() {
                 </div>
             </div>
 
-            <video autoPlay muted loop>
+            <video autoPlay muted loop playsInline>
                 <source src={video} type="video/mp4" />
             </video>
 
