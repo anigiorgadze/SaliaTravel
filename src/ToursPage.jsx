@@ -20,7 +20,7 @@ function ToursPage() {
                         <img src={item.img} alt={item.head} />
                         <h3 title={item.head}>{item.head}</h3>
                         <p>{item.includes}</p>
-                        <button><Link className='btn' state={{ from: '/ToursPage' }} to={`/product/${item.id}`}>მეტი</Link></button>
+                        <Link className='btn' state={{ from: '/ToursPage' }} to={`/product/${item.id}`}><button>მეტი</button></Link>
                     </div>
                 ))}
         </div>

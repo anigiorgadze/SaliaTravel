@@ -17,16 +17,16 @@ $primary-color:hsl(184, 69%, 43%);
 
 @font-face {
 	font-family: caps;
-	src:url(/public/Fonts/caps.ttf) format('truetype');
+	src:url(/public/Fonts/caps.woff2) format('woff2');
 }
 @font-face {
 	font-family: normal;
-	src:url(/public/Fonts/normal-bold.ttf) format('truetype');
+	src:url(/public/Fonts/normal-bold.woff2) format('woff2');
 }
 
 @font-face {
     font-family: neue; 
-    src: url(./assets/Fonts/neue.otf) format("opentype");
+    src: url(./assets/Fonts/neue.woff2) format("woff2");
 }
 
 
@@ -42,17 +42,3 @@ video::-webkit-media-controls-start-playback-button {
     display: none !important;
 }
     
-// button:focus,
-// div:focus,
-// a:focus {
-//     outline: none;
-//     background-color: #ffffff; /* ფონის ცვლილება აქტიურ მდგომარეობაში */
-
-// }
-
-// button:active,
-// div:active,
-// a:active {
-//     background-color: #ffffff; /* ფონის ცვლილება აქტიურ მდგომარეობაში */
-//     box-shadow: none;
-// }

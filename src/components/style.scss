@@ -423,17 +423,18 @@
                 font-weight: 100;
             }
 
-            button {
-                width: 100%;
-                padding: 15px;
-                border-radius: 30px;
-                border: none;
-                font-family: normal;
-                font-size: 16px;
-                color: white;
-                background-color: main.$primary-color;
-
-                .btn {
+            .btn {
+                
+                button {
+                    width: 100%;
+                    padding: 15px;
+                    border-radius: 30px;
+                    border: none;
+                    font-family: normal;
+                    font-size: 16px;
+                    color: white;
+                    background-color: main.$primary-color;
+                    cursor: pointer;
                     color: white;
                     font-family: caps;
                     font-size: 17px;
