@@ -88,9 +88,20 @@
                     align-items: center;
                     gap: 12px;
 
-                    ion-icon {
-                        font-size: 22px;
-                        color: main.$primary-color;
+                    a{
+                        border: 1px solid main.$primary-color;
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+
+                        img {
+                           width: 21px;
+                           filter: brightness(0) saturate(100%) invert(57%) sepia(44%) saturate(671%) hue-rotate(135deg) brightness(92%) contrast(97%);
+   
+                       }
                     }
                 }
 
@@ -623,18 +634,25 @@
                 margin-top: 1rem;
                 .icons {
                     display: flex;
-                    gap: 4px;
+                    gap: 10px;
                     
 
                     a {
+                        position: relative;
+                        z-index: 1111;
+                        border: 1px solid main.$white;
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
 
-
-                        ion-icon {
-                            background-color: main.$primary-color;
-                            font-size: 22px;
-                            color: main.$white;
-                            padding: 10px;
+                        img{
+                            width: 25px;
+                            filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(301deg) brightness(104%) contrast(102%);
                         }
+
                     }
                     
                 }
@@ -781,10 +799,12 @@
                     .icons {
                         gap: 10px !important;
 
-                        ion-icon {
-                            font-size: 1.3vw !important;
-                            border-radius: 30px
-                        }
+                        a{  
+                            background-color: main.$white;
+                            img {
+                                border: none;
+                            }  
+                        } 
                     }
 
                 }

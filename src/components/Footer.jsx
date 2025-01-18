@@ -1,5 +1,8 @@
 import video from '../assets/sea.mp4'
 import logoFooter from '../assets/logo.png'
+import fb from '../assets/icon/fb.png'
+import insta from '../assets/icon/insta.png'
+import tiktok from '../assets/icon/tiktok.png'
 
 function Footer() {
     return (
@@ -18,7 +21,6 @@ function Footer() {
                         </div>
                         <div className="footer__items footer__menu">
                             <h2>მენიუ</h2>
-
                             <ul>
                                 <li><a href="/Home">მთავარი</a></li>
                                 <li><a href="/About">ჩვენს შესახებ</a></li>
@@ -44,9 +46,9 @@ function Footer() {
 
                     <div className='last__line'>
                         <li className='icons'>
-                            <a href="https://www.facebook.com/profile.php?id=100076234376477" target='blank'><ion-icon name="logo-facebook"></ion-icon></a>
-                            <a href="https://www.instagram.com/saliatravel/" target='blank'><ion-icon name="logo-instagram"></ion-icon></a>
-                            <a href="https://www.tiktok.com/@saliatravel?_t=8sR5boVvKbd&_r=1" target='blank'><ion-icon name="logo-tiktok"></ion-icon></a>
+                            <a href="https://www.facebook.com/profile.php?id=100076234376477" target='blank'><img src={fb} alt="fb" /></a> 
+                            <a href="https://www.instagram.com/saliatravel/" target='blank'><img src={insta} alt="insta" /></a>
+                            <a href="https://www.tiktok.com/@saliatravel?_t=8sR5boVvKbd&_r=1" target='blank'><img src={tiktok} alt="tiktok" /></a>
                         </li>
                         <p>
                             © SaliaTravel all Rights Reserved. 2025

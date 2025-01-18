@@ -61,25 +61,24 @@ function Hero() {
 
         gsap.fromTo(
             header,
-            { opacity: 0, y: 200, rotation: 5, },
+            { opacity: 0, y: 200,  },
             {
+                delay: 1,
                 opacity: 1,
                 y: 0,
                 duration: 1,
-                rotation: 0,
                 ease: 'power1.out',
             }
         );
 
         gsap.fromTo(
             paragraph,
-            { opacity: 0, y: 200, rotation: 5, },
+            { opacity: 0, y: 200,  },
             {
+                delay: 1.2,
                 opacity: 1,
-                rotation: 0,
                 y: 0,
                 duration: 1,
-                delay: 0.2,
                 ease: 'power1.out',
             }
         );
@@ -108,6 +107,7 @@ function Hero() {
                     pagination={{ clickable: true, el: '.swiper-pagination', }}
                     scrollbar={{ draggable: true }}
                     slidesPerView={1}
+                    speed={2000}
                     onSwiper={(swiper) => (changeRef.current = swiper)}
                     onSlideChange={(swiper) => animateSlide(swiper)}  // Trigger animation on slide change
                 >

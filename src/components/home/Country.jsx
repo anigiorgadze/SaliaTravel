@@ -87,7 +87,8 @@ function Country() {
                         navigation
                         pagination={{ clickable: true }}
                         scrollbar={{ draggable: true, el: '.swiper-pagination', }}
-                        spaceBetween={20} 
+                        spaceBetween={20}
+                        speed={2000} 
                         // centeredSlides={true} 
                         slidesPerView={slidesToShow}
                         onSwiper={(swiper) => (changeRef.current = swiper)}
