@@ -2,17 +2,19 @@
 
 .product-details {
     margin: 10dvh auto;
+
     .background {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         // background-attachment: fixed !important;
-        background-position:center !important;
+        background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
 
         height: 300px;
+
         h2 {
             padding: 10px;
             font-size: 27px;
@@ -21,23 +23,26 @@
             font-family: caps;
             line-height: 35px;
         }
-        div{
-           display: flex;
-           flex-wrap: wrap !important;
-           justify-content: center;
-           align-items: center;
-           gap: 5px;
 
-           
-           a,p{
-            color: main.$white;
-            font-size: 17px;
-            text-align: center;
-           }
-           img{
+        div {
+            display: flex;
+            flex-wrap: wrap !important;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+
+            a,
+            p {
+                color: main.$white;
+                font-size: 17px;
+                text-align: center;
+            }
+
+            img {
                 width: 17px;
-           }
-      
+            }
+
         }
     }
 
@@ -55,7 +60,8 @@
 
     .grid {
         max-width: 90%;
-        margin:auto;
+        margin: auto;
+
         .paragraph-map {
             margin: 2rem 0;
             font-size: 20px;
@@ -138,9 +144,11 @@
     }
 
 }
-.tours__page{
+
+.tours__page {
     margin-top: 9.9vh;
-    .background{
+
+    .background {
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/hero-img/zanzibar.jpg") no-repeat center;
         background-size: cover;
         height: 300px;
@@ -157,24 +165,27 @@
             font-family: caps;
             line-height: 35px;
         }
-        div{
-           display: flex;
-           flex-wrap: wrap !important;
-           justify-content: center;
-           align-items: center;
-           gap: 5px;
-           
-           a{
-            color: main.$white;
-            font-size: 17px;
-           }
-           img{
+
+        div {
+            display: flex;
+            flex-wrap: wrap !important;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            a {
+                color: main.$white;
+                font-size: 17px;
+            }
+
+            img {
                 width: 17px;
-           }
-      
+            }
+
         }
 
     }
+
     .tours-content {
         display: grid;
         gap: 2rem;
@@ -205,10 +216,10 @@
                 opacity: 0.9;
                 font-weight: 100;
             }
-            
-            
+
+
             .btn {
-                
+
                 button {
                     width: 100%;
                     padding: 15px;
@@ -228,6 +239,7 @@
         }
     }
 }
+
 .contact {
     margin-top: 9.9vh;
 
@@ -400,10 +412,120 @@
     }
 
 }
+
+.about {
+    margin-top: 9.9dvh;
+
+    .background {
+
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/hero-img/zanzibar.jpg") no-repeat center;
+        background-size: cover;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            padding: 10px;
+            font-size: 35px;
+            text-align: center;
+            color: main.$white;
+            font-family: caps;
+            line-height: 35px;
+        }
+
+        div {
+            display: flex;
+            flex-wrap: wrap !important;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+
+            a {
+                color: main.$white;
+                font-size: 17px;
+            }
+
+            img {
+                width: 17px;
+            }
+
+        }
+
+    }
+
+    .main__content {
+        max-width: 90%;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: column-reverse;
+
+        .img__side {
+            margin-top: 3rem;
+            .img1 {
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            .img2,
+            .img3 {
+                display: none;
+            }
+        }
+
+        .text__side {
+            h3 {
+                font-size: 25px;
+                font-family: Caps;
+                color: main.$black;
+            }
+
+            ul {
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                li {
+                    display: flex;
+                    gap: 5px;
+
+                    img {
+                        // margin-top: -5px;
+                        height: 30px;
+                        transform: rotate(45deg);
+                        filter: brightness(0) saturate(100%) invert(57%) sepia(44%) saturate(671%) hue-rotate(135deg) brightness(92%) contrast(97%);
+
+                    }
+                    div{
+                        h4{
+                            display: flex;
+                            align-items: center;
+                            gap: 5px;
+                            font-size: 17px;
+                            font-family: Caps;
+                            color: main.$primary-color;
+                        }
+
+                        p{
+                           margin-top: 5px;
+                        }
+                    }
+
+
+                }
+
+
+            }
+        }
+    }
+}
+
 @media (min-width: 700px) {
-    .tours__page{
+    .tours__page {
         margin-top: 9.9vh;
-        .background{
+
+        .background {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/hero-img/zanzibar.jpg") no-repeat center;
             background-size: cover;
             height: 300px;
@@ -411,7 +533,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-    
+
             h2 {
                 padding: 10px;
                 font-size: 35px;
@@ -420,37 +542,40 @@
                 font-family: caps;
                 line-height: 35px;
             }
-            div{
-               display: flex;
-               flex-wrap: wrap !important;
-               justify-content: center;
-               align-items: center;
-               gap: 5px;
-               
-               a{
-                color: main.$white;
-                font-size: 17px;
-               }
-               img{
+
+            div {
+                display: flex;
+                flex-wrap: wrap !important;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+
+                a {
+                    color: main.$white;
+                    font-size: 17px;
+                }
+
+                img {
                     width: 17px;
-               }
-          
+                }
+
             }
-    
+
         }
+
         .tours-content {
             display: grid;
             gap: 2rem;
             max-width: 90%;
             margin: 4rem auto;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    
+
             .cards {
-   
+
                 img {
                     height: 250px;
-                }   
-                
+                }
+
                 h3 {
                     white-space: nowrap;
                     overflow: hidden;
@@ -465,12 +590,13 @@
                     -webkit-line-clamp: 3;
                     /* მხოლოდ სამი ხაზი გამოისახება */
                     line-clamp: 3;
-                } 
+                }
             }
         }
     }
 
 }
+
 @media (min-width: 1024px) {
     .contact {
 
@@ -529,6 +655,7 @@
         }
     }
 }
+
 @media (min-width: 1200px) {
     .product-details {
         .background {
@@ -558,6 +685,7 @@
             }
         }
     }
+
     .contact {
 
         .contact__main {
