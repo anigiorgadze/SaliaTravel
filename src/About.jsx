@@ -9,6 +9,12 @@ import img2 from "./assets/about/img2.jpg";
 import img3 from "./assets/about/img3.jpg";
 import icon from "./assets/about/arrow.png";
 
+import camera from "./assets/about/camera.png";
+import compas from "./assets/about/compas.png";
+import hat from "./assets/about/hat.png";
+import passport from "./assets/about/passport.png";
+
+
 import barsa from "./assets/insta/barsa.jpg";
 import antalya from "./assets/insta/antalya.jpg";
 import creta from "./assets/insta/creta.jpg";
@@ -88,7 +94,6 @@ const imgArr = [
   }, 
 ]
 
-
 function About() {
   const swiperRef = useRef(null);
   const changeRef = useRef(null);
@@ -122,8 +127,17 @@ function About() {
           <a href="#">ჩვენ შესახებ</a>
         </div>
       </div>
-
       <div className="main__content">
+        
+        <div className="decor__img ">
+          <img className="passport" src={passport} alt="" />
+          <img className="camera" src={camera} alt="" />
+          <img className="hat" src={hat} alt="" />
+          <img className="compas" src={compas} alt="" />
+
+        </div>
+
+
         <div className="img__side">
           <div className="img__box">
             <img className="img1" src={img1} alt="travel" />
