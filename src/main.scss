@@ -1,44 +1,187 @@
-$primary-color:#22afb9;
-$white:#ffff;
-$black:#3b3b3b;
-$grey:#f5f5f5;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$primary-color: #22afb9;
+$white: #ffff;
+$black: #3b3b3b;
+$grey: #f5f5f5;
 
 
-$primary-color:hsl(184, 69%, 43%);
+$primary-color: hsl(184, 69%, 43%);
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 @font-face {
-	font-family: caps;
-	src:url(/public/Fonts/caps.woff2) format('woff2');
-}
-@font-face {
-	font-family: normal;
-	src:url(/public/Fonts/normal-bold.woff2) format('woff2');
+    font-family: caps;
+    src: url(/public/Fonts/caps.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: neue; 
-    src: url(./assets/Fonts/neue.woff2) format("woff2");
+    font-family: normal;
+    src: url(/public/Fonts/normal-bold.woff2) format('woff2');
 }
 
+
+
+@font-face {
+    font-family: 'colasta';
+    src: url('/Fonts/Colasta-Bold.ttf') format('truetype');
+    // font-weight: normal;
+    // font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'colastaLight';
+    src: url('/Fonts/Colasta-Light.ttf') format('truetype');
+    // font-weight: normal;
+    // font-style: normal;
+}
 
 video::-webkit-media-controls {
     display: none !important;
 }
-    
+
 video::-webkit-media-controls-panel {
     display: none !important;
 }
-    
+
 video::-webkit-media-controls-start-playback-button {
     display: none !important;
 }
-    
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primary-color;
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $black;
+}
+
+.loader {
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+
+    .plane {
+        position: absolute;
+        top: 47.5%;
+        transform: scaleX(-1);
+
+    }
+
+    div {
+        width: 100%;
+        text-align: center;
+
+        h1 {
+            font-family: 'colasta' !important;
+            color: $white;
+            font-size: 55px;
+            display: inline;
+
+        }
+
+        .span {
+            font-family: 'colastaLight' !important;
+            color: $white;
+            font-size: 55px;
+            display: inline;
+        }
+
+
+        p {
+            font-family: "Montserrat", serif;
+            // font-weight: 100;
+            font-size: 13px;
+            color: $black;
+            letter-spacing: 3px;
+        }
+    }
+
+    // .down {
+    //     width: 100%;
+    //     height: 50dvh;
+    //     background-color: $white;
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     align-items: flex-end;
+    //     padding: 5%;
+
+    //     img {
+    //         width: 150px;
+    //     }
+    // }
+}
+
+
+@media (min-width: 1024px) {
+
+    .loader {
+        position: relative;
+        height: 100dvh;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+
+        .plane {
+            display: none;
+
+        }
+
+        div {
+            width: 100%;
+            text-align: center;
+
+            h1 {
+                font-family: 'colasta' !important;
+                color: $white;
+                font-size: 90px;
+                display: inline;
+
+            }
+
+            .span {
+                font-family: 'colastaLight' !important;
+                color: $white;
+                font-size: 90px;
+                display: inline;
+            }
+
+
+            p {
+                font-family: "Montserrat", serif;
+                // font-weight: 100;
+                font-size: 25px;
+                color: $black;
+                letter-spacing: 3px;
+            }
+        }
+
+    }
+}

@@ -82,7 +82,23 @@ function Hero() {
                 ease: 'power1.out',
             }
         );
+
     };
+
+    // useEffect(()=>{
+
+    //     gsap.fromTo('.hero',
+    //         {
+    //             // opacity: 0, 
+    //             backgroundColor: "hsl(0, 0.00%, 0.00%)"
+    //         },
+    //         {
+    //             backgroundColor: "rgba(0, 0, 0, 0)",
+    //             // opacity: 1, 
+    //             duration: 2,
+    //             ease: 'power1.out',
+    //         })
+    // },[])
 
     useEffect(() => {
         // Initial animation for the first slide

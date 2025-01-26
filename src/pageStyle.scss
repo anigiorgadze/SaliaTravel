@@ -415,7 +415,7 @@
 
 .about {
     margin-top: 9.9dvh;
-
+    overflow-x: hidden;
     .background {
 
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./assets/hero-img/zanzibar.jpg") no-repeat center;
@@ -531,7 +531,7 @@
         max-width: 90%;
         margin: auto;
         .insta-item{
-            overflow: hidden;
+            overflow-x: hidden !important;
             border-radius: 5px;
 
 
