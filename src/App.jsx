@@ -10,7 +10,7 @@ import ProductDetails from "./ProductDetails";
 import Footer from "./components/Footer";
 import ScrollPositionManager from "./ScrollPositionManager";
 import { useState, useEffect } from "react";
-import logo from './assets/logo.png'
+// import logo from './assets/logo.png'
 import gsap from "gsap";
 import plane from './assets/loader.png'
 function App() {
@@ -40,17 +40,18 @@ function App() {
 
     gsap.fromTo('.char', {
       opacity: 0,
-      y: 50,
-      rotationY: 90,
+      scale: 0,
+      // x: 50,
+      // rotateY: 180,
     }, {
       delay: 0.3,
       opacity: 1,
-      y: 0,
-      rotationY: 0,
+      scale: 1,
+      // x: 0,
+      // rotateY: 0,
       duration: 2.1,
-      stagger: 0.1, // ასოებს შორის დაგვიანება
+      stagger: 0.1,
       ease: "power3.out",
-
     })
 
     gsap.fromTo('.slogan',
@@ -60,24 +61,12 @@ function App() {
 
       },
       {
-        delay: 1,
+        delay: 1.1,
         opacity: 1,
         y: 0,
         duration: 1,
       })
 
-    // gsap.fromTo('.loader',
-    //   {
-    //     opacity: 1,
-
-    //   },
-    //   {
-    //     delay:1.7,
-    //     opacity: 0,
-    //     duration:1,
-    //     ease: "power2.out",
-    //   }
-    // )
   }, [])
 
 

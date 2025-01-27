@@ -2,7 +2,6 @@ import { useRef, useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 
-
 import spain from "../../assets/country/spain.jpg"
 import egypt from "../../assets/country/egypt.jpg"
 import turkey from "../../assets/country/turkey.jpg"
@@ -47,6 +46,7 @@ const country = [
         img: thailand,
     }, 
 ]
+
 function Country() {
     const swiperRef = useRef(null);
     const changeRef = useRef(null);
