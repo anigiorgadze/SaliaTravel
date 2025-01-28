@@ -1,6 +1,4 @@
 import Header from "./components/Header";
-// import Hero from "./components/Hero"
-// import Country from "./components/Country"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./Home";
 import About from "./About";
@@ -10,7 +8,6 @@ import ProductDetails from "./ProductDetails";
 import Footer from "./components/Footer";
 import ScrollPositionManager from "./ScrollPositionManager";
 import { useState, useEffect } from "react";
-// import logo from './assets/logo.png'
 import gsap from "gsap";
 import plane from './assets/loader.png'
 function App() {
@@ -22,17 +19,16 @@ function App() {
 
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 1700);
-  }
+      setTimeout(() => {
+        setLoading(false)
+      }, 2200);
+    }
   )
 
 
   useEffect(() => {
     gsap.fromTo('.plane', {
       x: '-100vw',
-      // delay: 0.2
     }, {
       x: '100vw',
       duration: 2.7,
@@ -41,14 +37,10 @@ function App() {
     gsap.fromTo('.char', {
       opacity: 0,
       scale: 0,
-      // x: 50,
-      // rotateY: 180,
     }, {
       delay: 0.3,
       opacity: 1,
       scale: 1,
-      // x: 0,
-      // rotateY: 0,
       duration: 2.1,
       stagger: 0.1,
       ease: "power3.out",
@@ -105,11 +97,6 @@ function App() {
       <Footer />
 
     </Router>
-    // <div>
-    //     <Header/>
-    //     <Hero />
-    //     <Country />
-    // </div>
   )
 }
 

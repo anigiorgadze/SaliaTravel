@@ -7,7 +7,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // border: 1px solid red;
     background-color: main.$white;
     position: fixed;
     top: 0;
@@ -19,6 +18,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 10px 0;
 
         .logo {
             width: 200px;
@@ -215,6 +215,7 @@
             align-items: flex-end;
             position: absolute;
             overflow: hidden;
+            cursor: default;
 
             h2 {
                 // transform: rotate(45deg);
@@ -240,6 +241,7 @@
                     color: main.$white;
                     font-family: caps;
                     text-shadow: 5px 5px main.$primary-color;
+                    cursor: default;
                 }
 
                 p {
@@ -247,6 +249,7 @@
                     font-size: 18px;
                     line-height: 25px;
                     font-weight: 600;
+                    cursor: default;
                     // font-family: normal;
                 }
             }
@@ -985,10 +988,13 @@
 
 @media (min-width: 1200px) {
     .header {
+        height: 12dvh;
         .header-content {
             .nav-bar {
                 width: 65%;
-
+                ul li a{
+                    font-size: 15px;
+                }
                 .menu-additon-info {
                     .icons {
                         display: flex;
@@ -1007,7 +1013,10 @@
 
                 }
             }
-
+            
+        }
+        .decor-header {
+            height: 12dvh ;
         }
     }
 
@@ -1179,6 +1188,21 @@
 } 
 
 @media (min-width: 1700px) {
+    .header {
+        height: 10dvh;
+        .header-content {
+            .nav-bar {
+                width: 65%;
+                ul li a{
+                    font-size: 17px;
+                }
+            }
+        }
+        .decor-header {
+            height: 10dvh;
+        }
+    }
+
     .footer {
         .background {
             .footer__content {
