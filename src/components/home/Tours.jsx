@@ -13,26 +13,6 @@ import bus from '../../assets/bus.png'
 
 function Tours() {
     useEffect(() => {
-        // const tl = gsap.timeline()
-        // tl.fromTo('.bus',
-        //     {
-        //         x: "0%"
-        //     },
-        //     {
-        //         x: "400%",
-        //         duration:2,
-        //         repeat:-1,
-        //         yoyo:true,
-
-        //     })
-        //     .to('.bus',{
-        //         x:'0',
-        //         // scaleX: -1,
-        //         duration:2,
-        //         repeat:-1,
-        //         yoyo:true,
-        //     })
-
         gsap.fromTo('.bus', {
             x: '0vw',
             duration: 1,
@@ -44,11 +24,30 @@ function Tours() {
                 scrub: true,
             }
         })
-    })
+        gsap.fromTo('.fade2', {
+            y: 70,
+            opacity: 0,
+
+        },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.7,
+                scrollTrigger: {
+                    trigger: '.fade2',
+                    start: "top 80%"
+
+                }
+            })
+    }, [])
+
+
     return (
         <div className='tours'>
             <div className='tours-head'>
-                <h2>ტურები</h2>
+                <div style={{ overflow: 'hidden', marginBottom: '2rem', display: "flex", alignItems: "flex-end" }}>
+                    <h2 className='fade2'>ტურები</h2>
+                </div>
                 <div className='bus-div'>
                     <img className='bus' src={bus} alt="" />
                     {/* <img src={bus2} alt="" /> */}

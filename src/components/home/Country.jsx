@@ -1,6 +1,9 @@
 import { useRef, useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 import spain from "../../assets/country/spain.jpg"
 import egypt from "../../assets/country/egypt.jpg"
@@ -16,35 +19,35 @@ const country = [
     {
         country: "ესპანეთი",
         img: spain,
-    }, 
+    },
     {
         country: "ეგვიპტე",
         img: egypt,
-    }, 
+    },
     {
         country: "თურქეთი",
         img: turkey,
-    }, 
+    },
     {
         country: "იტალია",
         img: italy,
-    }, 
+    },
     {
         country: "ჩეხეთი",
         img: czech,
-    }, 
+    },
     {
         country: "საფრანგეთი",
         img: france,
-    }, 
+    },
     {
         country: "ინდოეთი",
         img: india,
-    }, 
+    },
     {
         country: "ტაილანდი",
         img: thailand,
-    }, 
+    },
 ]
 
 function Country() {
@@ -54,33 +57,52 @@ function Country() {
     const [slidesToShow, setSlidesToShow] = useState(4); // Default value
 
     const updateSlidesToShow = () => {
-      if (window.innerWidth < 768) {
-        setSlidesToShow(1.1); // For mobile devices
-      } else if (window.innerWidth < 1024) {
-        setSlidesToShow(2.2); // For tablets
-      } else {
-        setSlidesToShow(4.3); // For larger screens
-      }
+        if (window.innerWidth < 768) {
+            setSlidesToShow(1.1); // For mobile devices
+        } else if (window.innerWidth < 1024) {
+            setSlidesToShow(2.2); // For tablets
+        } else {
+            setSlidesToShow(4.3); // For larger screens
+        }
     };
     useEffect(() => {
         updateSlidesToShow(); // Update on mount
         window.addEventListener('resize', updateSlidesToShow); // Update on resize
         return () => window.removeEventListener('resize', updateSlidesToShow);
-      }, []);
+    }, []);
+
+    useEffect(() => {
+        gsap.fromTo('.fade', {
+            y: 70,
+            opacity: 0,
+
+        },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 0.7,
+                scrollTrigger: {
+                    trigger: '.fade',
+                    start: "top 80%"
+                }
+            })
+    }, [])
 
     return (
         <div className='country'>
             <div className="country-content">
                 <div className='head'>
-                    <h2>პოპულარული ქვეყნები</h2>
+                    <div style={{ overflow: 'hidden' }}>
+                        <h2 className='fade'>პოპულარული ქვეყნები</h2>
+                    </div>
                     <div className='arr'>
-                            <button onClick={() => changeRef.current.slidePrev()}><ion-icon name="chevron-back-outline"></ion-icon></button>
-                            <button onClick={() => changeRef.current.slideNext()}><ion-icon name="chevron-forward-outline"></ion-icon></button>
+                        <button onClick={() => changeRef.current.slidePrev()}><ion-icon name="chevron-back-outline"></ion-icon></button>
+                        <button onClick={() => changeRef.current.slideNext()}><ion-icon name="chevron-forward-outline"></ion-icon></button>
                     </div>
                 </div>
                 {/* <div cl> </div> */}
                 <div ref={swiperRef}>
-                    <Swiper 
+                    <Swiper
                         className='country-slide'
                         modules={[Autoplay, Pagination]}
                         autoplay={{ delay: 5000, disableOnInteraction: false }}
@@ -88,7 +110,7 @@ function Country() {
                         pagination={{ clickable: true }}
                         scrollbar={{ draggable: true, el: '.swiper-pagination', }}
                         spaceBetween={20}
-                        speed={2000} 
+                        speed={2000}
                         // centeredSlides={true} 
                         slidesPerView={slidesToShow}
                         onSwiper={(swiper) => (changeRef.current = swiper)}

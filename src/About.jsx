@@ -2,6 +2,8 @@
 import { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import gsap from 'gsap'
+
 
 import arrow from "./assets/arrow-right.svg";
 import img1 from "./assets/about/img1.jpg";
@@ -56,42 +58,42 @@ const imgArr = [
     id: 1,
     img: barsa,
     link: "https://www.instagram.com/p/DC2BYyLRXYL/"
-  }, 
+  },
   {
     id: 2,
     img: antalya,
     link: "https://www.instagram.com/p/DE7QuyrxWgZ/"
-  }, 
+  },
   {
     id: 3,
     img: creta,
     link: "https://www.instagram.com/p/DEw5Nmvxk4R/"
-  }, 
+  },
   {
     id: 4,
     img: cruise,
     link: "https://www.instagram.com/p/DE4a94YRZ0P/"
-  }, 
+  },
   {
     id: 5,
     img: dive,
     link: "https://www.instagram.com/p/DEe85i-RrGo/"
-  }, 
+  },
   {
     id: 6,
     img: milan,
     link: "https://www.instagram.com/p/DEw1o-YRCOa/"
-  }, 
+  },
   {
     id: 1,
     img: viena,
     link: "https://instagram.com/p/DD9Pe5WRw_L/"
-  }, 
+  },
   {
     id: 7,
     img: switz,
     link: "https://www.instagram.com/p/DDbxouBxyuu/"
-  }, 
+  },
 ]
 
 function About() {
@@ -115,6 +117,18 @@ function About() {
     return () => window.removeEventListener("resize", updateSlidesToShow);
   }, []);
 
+  useEffect(() => {
+    gsap.fromTo('.fade4', {
+      y: 100,
+      opacity: 0,
+    },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.7,
+      })
+  }, [])
+
   const [hover, setHover] = useState(null);
 
   return (
@@ -128,7 +142,7 @@ function About() {
         </div>
       </div>
       <div className="main__content">
-        
+
         <div className="decor__img ">
           <img className="passport" src={passport} alt="" />
           <img className="camera" src={camera} alt="" />
@@ -146,7 +160,9 @@ function About() {
           </div>
         </div>
         <div className="text__side">
-          <h3>დაგეგმეთ ტური ჩვენთან ერთად</h3>
+          <div style={{overflow:'hidden'}}>
+            <h3 className="fade4">დაგეგმეთ ტური ჩვენთან ერთად</h3>
+          </div>
           <ul>
             {array.map((item) => (
               <li key={item.id}>

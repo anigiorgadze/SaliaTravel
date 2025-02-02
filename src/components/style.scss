@@ -476,6 +476,7 @@
         position: relative;
         border-bottom: 2px solid main.$primary-color;
         padding: 2rem 0;
+        overflow-y: hidden;
 
         h2 {
             font-size: 30px;
@@ -1062,6 +1063,7 @@
                 bottom: -6px;
 
                 img {
+                    position: relative;
                     transition: 0.5s;
                     height: 80px;
                     width: 80px;
@@ -1074,6 +1076,7 @@
                     height: 30px;
                     top: -60px;
                     right: 170px;
+                    z-index: -1;
                 }
 
                 .clouds {
@@ -1082,6 +1085,7 @@
                     height: 40px;
                     top: -45px;
                     right: 100px;
+                    z-index: -1;
                 }
 
                 .sun {
@@ -1090,6 +1094,7 @@
                     height: 40px;
                     top: -70px;
                     right: 20px;
+                    z-index: -1;
                 }
             }
         }
